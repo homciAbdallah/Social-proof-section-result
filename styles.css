@@ -1,0 +1,176 @@
+ :root {
+  --DarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--DarkMagenta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  background-color: var(--White);
+  font-family:"League Spartan", sans-serif;
+
+}
+main {
+ 
+  width: 90%;
+  
+
+ }
+.contaier {
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px 0;
+}
+header h1 {
+  font-size: 30px;
+  width: 70%;
+  margin: 0 auto 20px auto;
+ 
+}
+header p {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+nav > div {
+  background-color: var(--LightGrayishMagenta);
+  margin: 0 auto 10px auto;
+  width: 80%;
+   height: 40px;
+   border-radius: 10px;
+
+}
+.section1{
+  margin-bottom: 40px;
+} 
+ 
+.section2 > div {
+  background-color: var(--DarkMagenta);
+  color: var(--White);
+  margin: 0 auto 10px auto;
+  width: 80%;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right:20px ;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+}
+.avatar span {
+  color: var(--SoftPink);
+}
+.section2>div> :nth-child(2) {
+  line-height: 1.5;
+ text-align:start;
+}
+nav span{
+  display: flex;
+  justify-content: space-between;
+   width: 50%;
+  margin: auto;
+  margin-bottom: 5px;
+
+}
+picture img{
+  position:absolute;
+  height: 20%;
+width: 100%;
+justify-content: center; 
+}
+.desktop-top{
+  bottom: 0 ;
+ left: 0;
+   
+}
+.desktop-bottom{
+  top: 0 ;
+  left: 0;
+ 
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+
+  body{
+    
+     min-height: 100vh;
+        
+  } 
+  .section1{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+     
+  } 
+  .section1 header {
+     width: 45%;
+    
+     
+  } 
+  .section1 nav {
+    width: 50%;
+   position: relative;
+ } 
+  .section2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+min-width: 90%;
+
+  } 
+  .section2 >div{
+     margin-left: 0;
+     width: 30%;
+  } 
+
+  
+  .star2{
+    position: absolute;
+     top: 70px;
+     left: 20%;
+  }
+  .star3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+
+  
+  .card2{
+    position: absolute;
+     top: 50px;
+     left: 35%;
+  }
+  .card3{
+    position: absolute;
+    top: 100px;
+    left:   70%;
+
+  }
+
+
+
+
+
+
+  
+}  
